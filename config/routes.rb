@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   end
 
   namespace :api, default: { format: :json } do
-    resources :posts, only: [:index, :create]
+    resources :posts, only: [:index, :create] do
+      resources :comments, only: [:index]
+    end
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
