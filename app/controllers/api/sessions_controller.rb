@@ -3,7 +3,7 @@ class Api::SessionsController < Api::ApiController
   def create
     user = User.where(email: params[:email]).first
 
-    if user && user.valid_password?(params[:password])
+    if user&.valid_password?(params[:password])
       response.headers['X-User-email'] = user.email
       response.headers['X-User-token'] = user.authentication_token
       render plain: 'Signed in', status: :created

@@ -4,8 +4,7 @@ module UserHelper
       user: user1, friend: user2
     ).or(FriendshipRequest.where(
            user: user2, friend: user1
-    )).exists? or
-      (user1.eql? user2)
+         )).exists? or (user1.eql? user2)
   end
 
   def request_button(current_user, user)
