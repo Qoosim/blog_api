@@ -1,7 +1,6 @@
-# Friend app with Ruby on Rails
+# Blog app: add API endpoints
 
-> This is a Social app that allows users to create posts, reply with comments, send a friend request, accept a friend request and see what their friends are posting.
-
+> In this project we create API endpoints that allows user to interact with Social app. The user must be authenticated first.
 
 ![Timeline](./img/screenshot-1.png)
 
@@ -28,8 +27,8 @@ Postgres: >=9.5
 To get a local copy up and running follow these simple example steps.
 1. Open Terminal.
 2. Navigate to your desired location to download the contents of this repository.
-3. Clone this repository: ```git clone https://github.com/newhorizon-tech/ror-social-scaffold```
-4. Run ```cd private-events```.
+3. Clone this repository: ```git clone https://github.com/tnyandoro/blog_api.git```
+4. Run ```cd blog_api```
 
 ### Setup
 
@@ -58,19 +57,37 @@ Setup database with:
 
 - Run Rspec 'rspec -f -d'
 
+## API endpoints
+
+### API endpoint to list all posts
+  - http://localhost:3000/api/posts
+
+### API endpoint to list all comments for a post
+  - http://localhost:3000/api/posts/:post_id/comments
+
+### API endpoint to add a comment to a post
+  - http://localhost:3000/api/posts/:post_id/comments
+
 
 ## Authors
 
-👤 **Alaukik**
+👤 **Donat UWAMAHORO**
 
-- Github: [@newhorizon-tech](https://github.com/newhorizon-tech)
-- Twitter: [@techintosh3](https://twitter.com/techintosh3)
+- GitHub: [Donat Uwamahoro](https://github.com/uwadonat)
+- Twitter: [Donat Uwamahoro](https://www.linkedin.com/in/uwadonat)
+- LinkedIn: [Donat Uwamahoro](https://twitter.com/uwahoroDonat)
 
-👤 **Tendai Nyandoro**
+👤 **Tendai NYANDORO**
 
 - GitHub: [@Tendai Nyandoro](https://github.com/tnyandoro)
 - Twitter: [@tendai28](https://twitter.com/tendai28)
 - LinkedIn: [Tendai Nyandoro](https://www.linkedin.com/in/tendai-nyandoro/)
+
+👤 **Hubert MUGABO**
+
+- GitHub: [Hubert MUGABO](https://github.com/mugberto)
+- Twitter: [Hubert MUGABO](https://twitter.com/mugberto)
+- LinkedIn: [Hubert MUGABO](https://www.linkedin.com/in/hubert-mugabo)
 
 ## 🤝 Contributing
 
@@ -90,4 +107,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 MIT License
-# blog_api
+
