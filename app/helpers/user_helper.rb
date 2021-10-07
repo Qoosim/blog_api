@@ -4,7 +4,7 @@ module UserHelper
       user: user1, friend: user2
     ).or(FriendshipRequest.where(
            user: user2, friend: user1
-         )).exists? or
+    )).exists? or
       (user1.eql? user2)
   end
 
